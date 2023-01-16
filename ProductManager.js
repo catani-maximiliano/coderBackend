@@ -143,6 +143,7 @@ class ProductManager {
 // ----TESTING---- 
 
 const admProductos = new ProductManager();
+
 const comestibles = [
   {
     title: "papa",
@@ -181,10 +182,8 @@ comestibles.map((el) => {
   );
 }); 
 
-//admProductos.getProducts()
-//admProductos.updateProduct(0,'papilla','tubisuperpapilla',1000000,'tunmb',150,150000000) 
-//admProductos.getProducts()
-//admProductos.updateProduct(2,"naranjas","las mas ricas y jugosas",100,"naranja.com",24,100);
-//admProductos.deleteProduct(3)
-//admProductos.getProducts()
+admProductos.getProductById(1)
+admProductos.updateProduct(2,"naranjas","las mas ricas y jugosas",100,"naranja.com",24,100);
+admProductos.deleteProduct(3)
+admProductos.getProducts()
   
