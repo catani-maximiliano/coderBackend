@@ -1,0 +1,29 @@
+[
+	{
+		"id": 1,
+		"title": "papa",
+		"description": "ricas y nutritivas",
+		"price": "100",
+		"thumbnail": "papa.com",
+		"code": "55",
+		"stock": "20"
+	},
+	{
+		"id": 2,
+		"title": "manzana",
+		"description": "fruta deliciosa",
+		"price": "250",
+		"thumbnail": "manzana.com",
+		"code": "88",
+		"stock": "250"
+	},
+	{
+		"id": 3,
+		"title": "zanahoria",
+		"description": "las mejores de la provinca",
+		"price": "150",
+		"thumbnail": "zanahoria.com",
+		"code": "111",
+		"stock": "30"
+	}
+]
