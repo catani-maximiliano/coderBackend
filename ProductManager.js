@@ -136,6 +136,7 @@ class ProductManager {
     if (findProducto) {
       productosObjeto.splice(indexProducto, 1);
       fs.writeFileSync(this.path, JSON.stringify(productosObjeto, null, "\t"));
+      console.log(`se elimino el producto con el id ${idProduct}`)
     } else {
       console.log(`el producto con el id ${idProduct} no existe `);
     }
@@ -146,6 +147,14 @@ class ProductManager {
 
 const admProductos = new ProductManager();
 
+admProductos.getProducts()
+admProductos.addProduct("producto de prueba","este es un producto de prueba",200,"sin imagen","abc123",25)
+admProductos.getProducts()
+admProductos.getProductById(1)
+admProductos.updateProduct(1,"producto de prueba de update","este es un producto de prueba",200,"sin imagen","abc123",25)
+admProductos.deleteProduct(1)
+ 
+/*
 const comestibles = [
   {
     title: "papa",
@@ -172,7 +181,6 @@ const comestibles = [
     stock: "30",
   },
 ];
-
 comestibles.map((el) => {
   admProductos.addProduct(
     el.title,
@@ -183,8 +191,7 @@ comestibles.map((el) => {
     el.stock
   );
 });
-
 //admProductos.getProductById(1)
 //admProductos.updateProduct(2,"naranjas","las mas ricas y jugosas",100,"naranja.com",24,100);
 //admProductos.deleteProduct(2)
-//admProductos.getProducts()
+//admProductos.getProducts()*/
